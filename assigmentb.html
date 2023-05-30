@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link rel="stylesheet" href="card.css">
+    <title>Document</title>
+    <style>
+        p{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+<script type="text/babel">
+        function ui(){
+        var pd = <div>
+           
+      <main class="container">
+  <div class="card">
+    <img src="https://res.cloudinary.com/alexandracaulea/image/upload/v1582179610/user_fckc9f.jpg" alt="images" class="card__image" />
+    <div class="card__text">
+      <h2>Alexandra Caulea</h2>
+      <p>I enjoy drinking a cup of coffee every day</p>
+    </div>
+    <ul class="card__info">
+      <li>
+        <span class="card__info__stats">172</span>
+        <span>posts</span>
+      </li>
+      <li>
+        <span class="card__info__stats">47</span>
+        <span>followers</span>
+      </li>
+      <li>
+        <span class="card__info__stats">20</span>
+        <span>following</span>
+      </li>
+    </ul>
+    <div class="card__action">
+      <button class="card__action__button card__action--follow">follow</button>
+      <button class="card__action__button card__action--message">message</button>
+    </div>
+  </div>
+</main>
+    </div>
+ 
+           
+        
+        // var h1=React.createElement("h1",null,h2);
+        // var h22=React.createElement("p",null,p);
+        ReactDOM.render(pd,document.getElementById('root'));
+        }
+        ui()
+    </script>
+</body>
+</html>
